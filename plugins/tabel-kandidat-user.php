@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<?php 
+  include('config.php');
+?>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>PEMIRA IPB | Kandidat</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <!-- Bootstrap 3.3.2 -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome Icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Ionicons -->
+    <link href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Theme style -->
+    <link href="dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link href="dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+  <body class="skin-blue layout-top-nav">
+    <div class="wrapper">
+      
+      <header class="main-header">               
+        <nav class="navbar navbar-static-top">
+          <div class="container-fluid">
+          <div class="navbar-header">
+            <a href="index.php" class="navbar-brand">Pemira<b>IPB</b></a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbar-collapse">
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="navbar-search-input" placeholder="Cari NRP">
+              </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bar-chart-o"></i> Hasil Pemilihan <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="warning.php"> Wilayah KM IPB</a></li>
+                  <li><a href="warning.php"> Wilayah FAPERTA</a></li>
+                  <li><a href="warning.php"> Wilayah FKH</a></li>
+                  <li><a href="warning.php"> Wilayah FPIK</a></li>
+                  <li><a href="warning.php"> Wilayah FAPET</a></li>
+                  <li><a href="warning.php"> Wilayah FAHUTAN</a></li>
+                  <li><a href="warning.php"> Wilayah FATETA</a></li>
+                  <li><a href="warning.php"> Wilayah FMIPA</a></li>
+                  <li><a href="warning.php"> Wilayah FEM</a></li>
+                  <li><a href="warning.php"> Wilayah FEMA</a></li>
+                  <li><a href="warning.php"> Wilayah DIPLOMA</a></li>                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-table"></i> Data Pemilih <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="tabel-departemen-user.php?id=A"> Wilayah FAPERTA</a></li>
+                  <li><a href="tabel-departemen-user.php?id=B"> Wilayah FKH</a></li>
+                  <li><a href="tabel-departemen-user.php?id=C"> Wilayah FPIK</a></li>
+                  <li><a href="tabel-departemen-user.php?id=D"> Wilayah FAPET</a></li>
+                  <li><a href="tabel-departemen-user.php?id=E"> Wilayah FAHUTAN</a></li>
+                  <li><a href="tabel-departemen-user.php?id=F"> Wilayah FATETA</a></li>
+                  <li><a href="tabel-departemen-user.php?id=G"> Wilayah FMIPA</a></li>
+                  <li><a href="tabel-departemen-user.php?id=H"> Wilayah FEM</a></li>
+                  <li><a href="tabel-departemen-user.php?id=I"> Wilayah FEMA</a></li>
+                  <li><a href="tabel-departemen-user.php?id=J"> Wilayah DIPLOMA</a></li>
+                </ul>
+              </li>
+              <li><a href="tabel-kandidat-user.php"><i class="fa fa-table"></i> Kandidat</a></li>
+              <li><a href="login.php"><i class="fa fa-sign-in"></i> Login</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      </header>      
+      <!-- Full Width Column -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>
+            Data Kandidat
+            <small>PEMIRA IPB 2015</small>
+          </h1>
+          <ol class="breadcrumb">
+            <li class="active"><i class="fa fa-table"></i> Kandidat</li>
+          </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+          <!-- row -->
+          <div class="row">
+            <div class="col-xs-12">
+              <!-- jQuery Knob -->
+              <div class="box box-solid collapsed-box">
+                <div class="box-header">
+                  <i class="fa fa-table"></i>
+                  <h3 class="box-title">Wilayah KM IPB</h3>
+                  <div class="box-tools pull-right">
+                    <button class="btn btn-default btn-sm" data-widget="collapse"><i class="fa fa-plus"></i></button>
+                    <button class="btn btn-default btn-sm" data-widget="remove"><i class="fa fa-times"></i></button>
+                  </div>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                  <div class="table-responsive">
+<?php 
+      $fakultas = 'K';
+      //ambil data ketua dan wakil dari kandidat 1 dan kandidat 2 di tabel kandida sesuai fakultas      
+      $q_k1_k = mysql_query("SELECT * FROM kandidat INNER JOIN pengguna, departemen WHERE kandidat.wilayah='K' AND kandidat.no_urut='1' AND pengguna.departemen=departemen.kode_departemen AND kandidat.ketua=pengguna.nrp ");
+      $q_k1_w = mysql_query("SELECT * FROM kandidat INNER JOIN pengguna, departemen WHERE kandidat.wilayah='K' AND kandidat.no_urut='1' AND pengguna.departemen=departemen.kode_departemen AND kandidat.wakil=pengguna.nrp ");
+      $q_k2_k = mysql_query("SELECT * FROM kandidat INNER JOIN pengguna, departemen WHERE kandidat.wilayah='K' AND kandidat.no_urut='2' AND pengguna.departemen=departemen.kode_departemen AND kandidat.ketua=pengguna.nrp ");
+      $q_k2_w = mysql_query("SELECT * FROM kandidat INNER JOIN pengguna, departemen WHERE kandidat.wilayah='K' AND kandidat.no_urut='2' AND pengguna.departemen=departemen.kode_departemen AND kandidat.wakil=pengguna.nrp ");
+      //masukan data baris query kesatu variabel 
+      $k1 = mysql_fetch_array($q_k1_k);
+      $w1 = mysql_fetch_array($q_k1_w);
+      $k2 = mysql_fetch_array($q_k2_k);
+      $w2 = mysql_fetch_array($q_k2_w);
+?>
+                    <table class="table no-margin">
+                      <thead>
+                        <tr>
+                            <th width="50%"><center>Kandidat 1</center></th>
+                            <th><center>Kandidat 2</center></th>  
+                        </tr>
+<?php if (!empty($k1['image']) || !empty($k2['image'])) {
+?>
+                        <tr>
+                          <td><center><img width="250px" height="250px" src="image/<?php echo $k1['image'] ?>"></center></td>
+                          <td><center><img width="250px" height="250px" src="image/<?php echo $k2['image'] ?>"></center></td>
+                        </tr>
+<?php } ?>
+                      </thead>
+                      <tbody>
+                          <tr>
+                            <td><?php echo $k1['nrp']?> <?php echo $k1['fullname']?></td>
+                            <td><?php echo $k2['nrp']?> <?php echo $k2['fullname']?></td>
+                          </tr>
+                          <tr>
+                            <td><?php echo $k1['nama_departemen']?></td>
+                            <td><?php echo $k2['nama_departemen']?></td>
+                          </tr>
+                      </tbody>
+                      <tbody>
+                          <tr>
+                            <td><?php echo $w1['nrp']?> <?php echo $w1['fullname']?></td>
+                            <td><?php echo $w2['nrp']?> <?php echo $w2['fullname']?></td>
+                          </tr>
+                          <tr>
+                            <td><?php echo $w1['nama_departemen']?></td>
+                            <td><?php echo $w2['nama_departemen']?></td>
+                          </tr>
+                    </table>
+                  </div><!-- /.table-responsive -->
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->
+            </div><!-- /.col -->
+          </div><!-- /.row --> 
+
+<?php  $loop_fakultas = mysql_query("SELECT * FROM fakultas");
+       while ($l_f = mysql_fetch_array($loop_fakultas)) {
+?>
+          <!-- row -->
+          <div class="row">
+            <div class="col-xs-12">
+              <!-- jQuery Knob -->
+              <div class="box box-solid collapsed-box">
+                <div class="box-header">
+                  <i class="fa fa-table"></i>
+                  <h3 class="box-title">Wilayah <?php echo $l_f['singkatan'] ;?></h3>
+                  <div class="box-tools pull-right">
+                    <button class="btn btn-default btn-sm" data-widget="collapse"><i class="fa fa-plus"></i></button>
+                    <button class="btn btn-default btn-sm" data-widget="remove"><i class="fa fa-times"></i></button>
+                  </div>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                  <div class="table-responsive">
+<?php 
+      $fakultas = $l_f['kode_fakultas'];
+      //ambil data ketua dan wakil dari kandidat 1 dan kandidat 2 di tabel kandida sesuai fakultas      
+      $q_k1_k = mysql_query("SELECT * FROM kandidat INNER JOIN pengguna, departemen WHERE kandidat.wilayah='$fakultas' AND kandidat.no_urut='1' AND kandidat.ketua=pengguna.nrp AND pengguna.departemen=departemen.kode_departemen ");
+      $q_k1_w = mysql_query("SELECT * FROM kandidat INNER JOIN pengguna, departemen WHERE kandidat.wilayah='$fakultas' AND kandidat.no_urut='1' AND kandidat.wakil=pengguna.nrp AND pengguna.departemen=departemen.kode_departemen ");
+      $q_k2_k = mysql_query("SELECT * FROM kandidat INNER JOIN pengguna, departemen WHERE kandidat.wilayah='$fakultas' AND kandidat.no_urut='2' AND kandidat.ketua=pengguna.nrp AND pengguna.departemen=departemen.kode_departemen ");
+      $q_k2_w = mysql_query("SELECT * FROM kandidat INNER JOIN pengguna, departemen WHERE kandidat.wilayah='$fakultas' AND kandidat.no_urut='2' AND kandidat.wakil=pengguna.nrp AND pengguna.departemen=departemen.kode_departemen ");
+      //masukan data baris query kesatu variabel 
+      $k1 = mysql_fetch_array($q_k1_k);
+      $w1 = mysql_fetch_array($q_k1_w);
+      $k2 = mysql_fetch_array($q_k2_k);
+      $w2 = mysql_fetch_array($q_k2_w);
+?>
+                    <table class="table no-margin">
+                      <thead>
+                        <tr>
+                            <th width="50%"><center>Kandidat 1</center></th>
+                            <th><center>Kandidat 2</center></th>  
+                        </tr>
+<?php if (!empty($k1['image']) || !empty($k2['image'])) {
+?>
+                        <tr>
+                          <td><center><img width="250px" height="250px" src="image/<?php echo $k1['image'] ?>"></center></td>
+                          <td><center><img width="250px" height="250px" src="image/<?php echo $k2['image'] ?>"></center></td>
+                        </tr>
+<?php } ?>
+                      </thead>
+                      <tbody>
+                          <tr>
+                            <td><?php echo $k1['nrp']?> <?php echo $k1['fullname']?></td>
+                            <td><?php echo $k2['nrp']?> <?php echo $k2['fullname']?></td>
+                          </tr>
+                          <tr>
+                            <td><?php echo $k1['nama_departemen']?></td>
+                            <td><?php echo $k2['nama_departemen']?></td>
+                          </tr>
+                      </tbody>
+                      <tbody>
+                          <tr>
+                            <td><?php echo $w1['nrp']?> <?php echo $w1['fullname']?></td>
+                            <td><?php echo $w2['nrp']?> <?php echo $w2['fullname']?></td>
+                          </tr>
+                          <tr>
+                            <td><?php echo $w1['nama_departemen']?></td>
+                            <td><?php echo $w2['nama_departemen']?></td>
+                          </tr>
+                    </table>
+                  </div><!-- /.table-responsive -->
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->
+            </div><!-- /.col -->
+          </div><!-- /.row --> 
+<?php }?>
+<!-- end loop -->
+        </section><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+      <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+          <b>Version</b> 1.0
+        </div>
+        <strong>Copyright &copy; 2015 <a>Pemilihan Raya Institut Pertanian Bogor</a>.</strong> 
+      </footer>
+    </div><!-- ./wrapper -->
+
+
+    <!-- jQuery 2.1.3 -->
+    <script src="plugins/jQuery/jQuery-2.1.3.min.js"></script>
+    <!-- Bootstrap 3.3.2 JS -->
+    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- SlimScroll -->
+    <script src="plugins/slimScroll/jquery.slimScroll.min.js" type="text/javascript"></script>
+    <!-- FastClick -->
+    <script src='plugins/fastclick/fastclick.min.js'></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/app.min.js" type="text/javascript"></script>
+  </body>
+</html>
